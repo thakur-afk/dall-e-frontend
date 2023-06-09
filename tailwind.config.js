@@ -10,7 +10,7 @@
 
 
 export default  {
-  content: ['./src/**/*.{js,jsx}'],
+  content: ["./index.html",'./src/**/*.{js,jsx,vue}'],
   theme: {
     extend: {
       screens: {
@@ -26,4 +26,5 @@ export default  {
     },
   },
   plugins: [],
+  purge: [ "./src/pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}", ],
 }
